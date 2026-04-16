@@ -1,0 +1,7 @@
+PRINT "Enter a number:"
+INPUT num
+IF num % 2 == 0 THEN
+  PRINT "Even"
+ELSE
+  PRINT "Odd"
+END

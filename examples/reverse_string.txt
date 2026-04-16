@@ -1,0 +1,4 @@
+PRINT "Enter a string:"
+INPUT text
+REVERSE text
+PRINT text

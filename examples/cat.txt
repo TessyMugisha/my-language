@@ -1,0 +1,3 @@
+PRINT "Type something:"
+INPUT text
+PRINT text

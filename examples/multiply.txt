@@ -1,0 +1,6 @@
+EREKA "Injiza numero ya mbere:"
+INJIZA a
+EREKA "Injiza numero ya kabiri:"
+INJIZA b
+REKA result = a * b
+EREKA result

@@ -1,0 +1,9 @@
+PRINT "Enter a character:"
+INPUT char
+PRINT "How many times?"
+INPUT count
+LET i = 0
+WHILE i < count DO
+  PRINT char
+  LET i = i + 1
+END

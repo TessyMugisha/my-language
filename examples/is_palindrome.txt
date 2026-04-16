@@ -1,0 +1,3 @@
+PRINT "Enter a string:"
+INPUT text
+PALINDROME text
