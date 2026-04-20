@@ -1,4 +1,16 @@
+# "My language supports the following features:
+# Variables: Store both numbers and strings using the LET keyword (or REKA in Kinyarwanda). Example: LET x = 5 or LET name = "Tessy"
+# Data Types: Two types - integers and strings. Integers are used for math operations, strings are enclosed in quotes.
+# Input/Output: PRINT displays output to the screen, INPUT gets user input and stores it in variables.
+# Arithmetic Operators: Addition (+), subtraction (-), multiplication (*), division (/), and modulo (%) for math operations.
+# Comparison Operators: Equal to (==), greater than (>), and less than (<) for conditions.
+# Control Structures: IF/THEN/ELSE/END for conditional logic, WHILE/DO/END for loops.
+# String Operations: REVERSE reverses a string, PALINDROME checks if a string reads the same forwards and backwards.
+# Kinyarwanda Support: All keywords have Kinyarwanda aliases (EREKA for PRINT, INJIZA for INPUT, etc.) to celebrate my Rwandan heritage."
+
+
 def lexer(code):
+    # Breaks code into tokens
     tokens = []
     current_token = ""
     in_string = False
@@ -118,11 +130,10 @@ def evaluate_condition(tokens, start_index, variables):
 
 
 def interpret(tokens, variables=None):
-    """Executes the tokens"""
     if variables is None:
-        variables = {}  # Only create new dict if not passed in
+        variables = {}  # Store stuff like x=5, name="Tessy"
 
-    i = 0
+    i = 0  # Position tracker
 
     while i < len(tokens):
         token = tokens[i]
