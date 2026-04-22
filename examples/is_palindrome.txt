@@ -1,3 +1,5 @@
 PRINT "Enter a string:"
 INPUT text
+FLIP text
 PALINDROME text
+PRINT result

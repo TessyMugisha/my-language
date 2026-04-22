@@ -1,3 +1,3 @@
-PRINT "Type something:"
-INPUT text
-PRINT text
+EREKA "Type something:"
+INJIZA text
+EREKA text

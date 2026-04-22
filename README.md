@@ -82,7 +82,7 @@ Both English and Kinyarwanda keywords work interchangeably.
 
 **Kinyarwanda Keywords:** EREKA, REKA, INJIZA, NIBA, NONEHO, ARIKO, BYE, KOMEZA, KORA, INYUMA, PALI
 
-**Operators:** +, -, *, /, %, ==, >, 
+**Operators:** +, -, *, /, %, ==, > 
 
 ## Example Programs
 
