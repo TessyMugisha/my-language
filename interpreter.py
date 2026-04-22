@@ -116,7 +116,8 @@ def evaluate_condition(tokens, start_index, variables):
     # Replace variables with values
     for j, tok in enumerate(expr_tokens):
         if tok in variables:
-            expr_tokens[j] = str(variables[tok])
+            val = variables[tok]
+            expr_tokens[j] = repr(val) if isinstance(val, str) else str(val)
 
     # Build condition string
     condition = " ".join(expr_tokens)
@@ -224,8 +225,7 @@ def interpret(tokens, variables=None):
             i += 1
             var_name = tokens[i]
             if var_name in variables:
-                # Reverse the string
-                variables[var_name] = variables[var_name][::-1]
+                variables[var_name] = str(variables[var_name])[::-1]
 
         elif token == "PALINDROME":
             # Pattern: PALINDROME varname
