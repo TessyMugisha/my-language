@@ -225,7 +225,11 @@ def interpret(tokens, variables=None):
             i += 1
             var_name = tokens[i]
             if var_name in variables:
-                variables[var_name] = str(variables[var_name])[::-1]
+                reversed_text = str(variables[var_name])[::-1]
+                try:
+                    variables[var_name] = int(reversed_text)
+                except ValueError:
+                    variables[var_name] = reversed_text
 
         elif token == "PALINDROME":
             # Pattern: PALINDROME varname
