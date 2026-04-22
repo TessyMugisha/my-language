@@ -1,5 +1,5 @@
 PRINT "Enter a string:"
 INPUT text
-FLIP text
+REVERSE text
 PALINDROME text
 PRINT result
