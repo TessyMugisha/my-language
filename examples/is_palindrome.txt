@@ -1,5 +1,9 @@
-PRINT "Enter a string:"
-INPUT text
-REVERSE text
-PALINDROME text
-PRINT result
+EREKA "Enter a string:"
+INJIZA text
+REKA copy = text
+INYUMA copy
+NIBA text == copy NONEHO
+EREKA "true"
+ARIKO
+EREKA "false"
+BYE
